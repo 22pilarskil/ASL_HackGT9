@@ -1,19 +1,24 @@
 #Import necessary libraries
-from flask import Flask, render_template, Response, request, jsonify, send_from_directory
-from flask_socketio import SocketIO,emit
+from flask import Flask, Response, send_from_directory
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
 import frames
 import time
 
-from HelloApiHandler import HelloApiHandler
+class RequestHandler(Resource):
+  def post(self):
+    parser = reqparse.RequestParser()
+    parser.add_argument('write', type=int)
+    args = parser.parse_args()
+    frames.set_write(args.write)
+
 
 #Initialize the Flask app
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')
 CORS(app)
 api = Api(app)
 
-api.add_resource(HelloApiHandler, '/flask/hello')
+api.add_resource(RequestHandler, '/flask/hello')
 
 @app.route('/')
 def index():
@@ -23,6 +28,10 @@ def index():
 @app.route('/video_feed')
 def video_feed():
     return Response(frames.gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/image_feed')
+def image_feed():
+    return Response(frames.get_images(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
     app.run(debug=True)
