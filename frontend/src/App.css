@@ -1,3 +1,4 @@
+/*NAVIGATION STYLE*/
 .navStyle {
   padding: 2em;
   display: flex;
@@ -7,6 +8,73 @@
 }
 
 .link {
-  padding: 1em;;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-right: 3.5em;
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
 }
 
+.link:visited {
+  color: black;
+}
+
+.link:hover {
+  color: #f24b6a;
+}
+
+/*ELEMENT STYLES*/
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 96px;
+  line-height: 116px;
+  color: black;
+  font-weight: 400;
+  padding-left: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+.right {
+  text-align: right;
+  margin-left: 2em;
+}
+
+/*HOME PAGE STYLES*/
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+#HomeComponent {
+}
+
+#imgH {
+  width: auto;
+}
+
+#T {
+  max-width: 899px;
+  padding-left: 2em;
+  padding-top: 4em;
+  
+}
+
+.rotate {
+  transform: rotate(270deg);
+}
+
+.homeimg {
+  width: 541px;
+  height: 735px;
+
+}

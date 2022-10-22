@@ -1,6 +1,9 @@
 function Translate() {
     return (
-        <p>Translate</p>
+        <div>
+            <h1>TRANSLATE</h1>
+            
+        </div>
     );
 }
 
