@@ -1,7 +1,7 @@
 function GuidedButton() {
     return(
-        <button><p>GUIDED</p></button>
+        <div className="chooseButton"><p>GUIDED</p></div>
     );
 }
-console.log("hi");
+
 export default GuidedButton;

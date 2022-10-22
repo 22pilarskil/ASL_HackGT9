@@ -1,6 +1,6 @@
 function UnguidedButton() {
     return(
-        <button><p>UNGUIDED</p></button>
+        <div className="chooseButton"><p>UNGUIDED</p></div>
     );
 }
 

@@ -25,12 +25,12 @@
   color: #f24b6a;
 }
 
-/*ELEMENT STYLES*/
+/*GENERAL ELEMENT STYLES*/
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 96px;
   line-height: 116px;
-  color: black;
+  color: #082b59;
   font-weight: 400;
   padding-left: 1em;
   margin-top: 0px;
@@ -38,6 +38,25 @@ h1 {
 }
 
 p {
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.chooseButton {
+  width: 142px;
+  height: 69px;
+  border-radius: 0em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  color: #082b59;
+}
+
+.pHome {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
 }
@@ -53,6 +72,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0px;
+  flex-wrap: wrap;
 }
 
 #HomeComponent {
@@ -76,5 +96,55 @@ p {
 .homeimg {
   width: 541px;
   height: 735px;
+}
 
+/*PRACTICE PAGE STYLES*/
+
+#col1 {
+  padding-left: 6em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+#col2 {
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.practLetter {
+  font-size: 96px;
+  
+}
+
+#letterDisplay {
+  background-color: #f26444;
+  width: auto;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#handDisplay {
+  background-color: #f26444;
+  width: auto;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+#practice {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3em;
+}
+
+.webcam {
+  max-width: 1000px;
 }

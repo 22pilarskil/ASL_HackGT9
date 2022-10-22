@@ -1,10 +1,14 @@
 import PractCol1 from "../components/PractCol1";
+import PractCol2 from "../components/PractCol2";
 function Practice() {
     return (
         <div>
-             <h1>PRACTICE</h1>
-             <PractCol1 />
-             <img src="{{ url_for('video_feed') }}" width="100%"/>
+            <h1>PRACTICE</h1>
+            <div id="practice">
+            <PractCol1 />
+            <PractCol2 />
+            </div>
+             
 
         </div>
        
