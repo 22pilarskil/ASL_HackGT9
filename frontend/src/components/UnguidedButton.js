@@ -7,7 +7,7 @@ function UnguidedButton() {
         let unguided = document.getElementById("Allprompts");
         
         console.log("Unguided button clicked");
-        if (unguided != null && unguided != undefined) {
+        if (unguided != null && unguided != undefined && unguided.childElementCount > 1) {
             console.log(unguided);
             let child = unguided.lastChild;
             unguided.removeChild(child);

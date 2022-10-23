@@ -1,14 +1,14 @@
 import globalBoolean from "./globalBoolean";
 import Prompts from "./Prompts";
+import HandSign from "./HandSign";
+import { createElement } from "react";
 
 function learnMode() {
     console.log("in function");
     let guided = document.getElementById("Allprompts");
     console.log("Guided button clicked");
-    if (guided != null && guided != undefined ) {
-        console.log(guided);
-        guided = <Prompts />;
-        console.log(guided);
+    if (guided != null && guided != undefined && guided.childElementCount === 1) {
+        guided.appendChild(<HandSign />);
     }
     }
 

@@ -1,7 +1,9 @@
+import Directions from "./Directions";
 function PractCol2() {
     return (
         <div id="col2">
-            <img src="http://localhost:5000/video_feed" className="webcam" alt="logo" />
+            <Directions />
+            <img src="http://localhost:5000/video_feed" className="App-logo webcam" alt="logo" /> 
         </div>
     );
 }

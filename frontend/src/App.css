@@ -1,28 +1,32 @@
 /*NAVIGATION STYLE*/
 .navStyle {
-  padding: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  background-color: #E9E6F0;
 }
 
 .link {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-right: 3.5em;
+  padding-left: 3.5em;
   font-weight: 700;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
+  color: #1D1C40;
 }
 
 .link:visited {
-  color: black;
+  color: #1D1C40;
 }
 
 .link:hover {
-  color: #f24b6a;
+  color: #D93B92;
 }
 
 /*GENERAL ELEMENT STYLES*/
@@ -30,15 +34,19 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 96px;
   line-height: 116px;
-  color: #082b59;
+  color: #F26444;
   font-weight: 400;
   padding-left: 1em;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.main {
+  color: #F26444;
+}
+
 p {
-  
+  color: #1D1C40;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -52,13 +60,20 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8e8e8;
+  border-color: #D93B92;
+  border-style: solid;
+  border-width: 2px;
   color: #082b59;
 }
 
 .pHome {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
+}
+
+strong {
+  color: #D93B92;
+  font-weight: 500;
 }
 
 .right {
@@ -70,12 +85,13 @@ p {
 #home {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
 }
 
 #HomeComponent {
+  padding-top: 2em;
+  background-color: #E9E6F0;
 }
 
 #imgH {
@@ -83,9 +99,10 @@ p {
 }
 
 #T {
-  max-width: 899px;
+  max-width: 850px;
   padding-left: 2em;
   padding-top: 4em;
+  size-adjust: inherit;
   
 }
 
@@ -96,40 +113,68 @@ p {
 .homeimg {
   width: 541px;
   height: 735px;
+  size-adjust: inherit;
 }
 
 /*PRACTICE PAGE STYLES*/
+#allPract {
+  background-color: #E9E6F0;
+  padding-top: 2em;
+}
+
+#practHeading {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 30px;
+  background-color: #E9E6F0;
+}
 
 #col1 {
   padding-left: 6em;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  background-color: #E9E6F0;
 }
 
 #col2 {
   padding-left: 6em;
   padding-right: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  row-gap: 20px;
+  background-color: #E9E6F0
 }
 
 .practLetter {
   font-size: 96px;
-  
 }
 
 #letterDisplay {
-  background-color: #f26444;
+  background-color: #1D1C40;
   width: auto;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #handDisplay {
-  background-color: #f26444;
+  background-color: #1D1C40;
   width: auto;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handSign {
+  max-height: 290px;
 }
 
 #buttons {
