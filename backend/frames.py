@@ -28,7 +28,7 @@ hands = mp_hands.Hands(
     max_num_hands = 1
     )
 correct = True
-practice_letter = ''
+practice_letter, chain = '', ''
 
 write = False
 
@@ -37,15 +37,16 @@ start = time.time()
 score = 0
 
 def set_write(write_val):
-    global write, start, score
+    global write, start, score, chain
     write = write_val
     start = time.time()
     score = 0
+    chain = ''
 
 def gen_frames():  
-    global correct, practice_letter, score
+    global correct, practice_letter, score, chain
     start = time.time()
-    letter, cur_letter, last_letter, chain = "", "", "", ""
+    letter, cur_letter, last_letter = '', '', ''
     count = 0
 
     while True:
