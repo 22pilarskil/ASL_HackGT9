@@ -108,14 +108,14 @@ def gen_frames():
             yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + image + b'\r\n')
 
 
-def get_images():
+def get_images(type="signs"):
     global correct, practice_letter, score
     while True:
-        letters = ['A','B','C','D']#,'E','F','G','H','I','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y']
+        letters = ['A']#,'B','C','D', 'E','F','G','H','I','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y']
         if correct:
             practice_letter = random.choice(letters)
             correct = False
-        image = cv2.imread('/Users/liampilarski/Desktop/ASL_HackGT9/frontend/build/signs/{}.jpg'.format(practice_letter))
+        image = cv2.imread('/Users/liampilarski/Desktop/ASL_HackGT9/frontend/build/{}/{}.jpg'.format(type, practice_letter))
         ret, buffer = cv2.imencode('.jpg', image)
         image = buffer.tobytes()
         yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + image + b'\r\n')

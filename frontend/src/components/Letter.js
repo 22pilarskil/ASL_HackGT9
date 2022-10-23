@@ -1,6 +1,6 @@
 function Letter(props) {
     return (   
-        <img src={props}></img>
+        <img id="letter" src="http://localhost:5000/letter_feed"></img>
     );
 }
 

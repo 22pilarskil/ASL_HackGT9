@@ -24,8 +24,8 @@ function Practice() {
             <h1>PRACTICE</h1>
             </div>
             <div id="practice">
-            <PractCol1/>
             <PractCol2/>
+            <PractCol1/>
             </div>
         </div>
        

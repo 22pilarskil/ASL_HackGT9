@@ -91,6 +91,7 @@ strong {
 
 #HomeComponent {
   padding-top: 2em;
+  padding-bottom: 2em;
   background-color: #E9E6F0;
 }
 
@@ -131,6 +132,7 @@ strong {
 
 #col1 {
   padding-left: 6em;
+  padding-right: 6em;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -139,7 +141,6 @@ strong {
 
 #col2 {
   padding-left: 6em;
-  padding-right: 6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +168,7 @@ strong {
   background-color: #1D1C40;
   width: auto;
   height: 300px;
+  width: 300px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -175,6 +177,7 @@ strong {
 
 .handSign {
   max-height: 290px;
+  max-width: 290px;
 }
 
 #buttons {
@@ -193,4 +196,31 @@ strong {
 
 .webcam {
   max-width: 1000px;
+}
+
+/*TRANSLATE STYLING*/
+#translate {
+  display: flex;
+  max-width: 1000px;
+  padding-left: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 6em;
+  padding-left: 6em;
+  padding-top: 1.5em;
+  row-gap: 20px;
+}
+
+#spacer {
+  width: 300px;
+}
+
+.two {
+  padding-top: 5.75em;
+}
+
+#letter {
+  max-width: 300px;
+  max-height: 300px;
 }

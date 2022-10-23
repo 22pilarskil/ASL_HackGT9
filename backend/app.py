@@ -29,9 +29,13 @@ def index():
 def video_feed():
     return Response(frames.gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/image_feed')
-def image_feed():
-    return Response(frames.get_images(), mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.route('/sign_feed')
+def sign_feed():
+    return Response(frames.get_images("signs"), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/letter_feed')
+def letter_feed():
+    return Response(frames.get_images("letters"), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/get_time')
 def get_time():

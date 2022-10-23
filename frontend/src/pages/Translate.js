@@ -15,9 +15,17 @@ function Translate() {
   
     }, [])
     return (
-        <div>
+        <div id="HomeComponent">
             <h1>TRANSLATE</h1>
-            <img src="http://localhost:5000/video_feed" className="App-logo handSign" alt="logo"/>
+            <div id="translate">
+            <div id="spacer"></div>
+            <p className="pHome"><strong>Directions: </strong>
+                Hold up a sign, and the corresponding letter will appear. To delete a letter, make a 
+                thumbs down. To use the same sign twice in a row, hold up your open hand like a high-five.
+            </p>
+            <img src="http://localhost:5000/video_feed" className="App-logo webcam two" alt="logo"/>
+
+            </div>
         </div>
     );
 }

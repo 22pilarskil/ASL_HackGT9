@@ -1,6 +1,10 @@
 function Directions() {
     return (
-        <p className="pHome"><strong>Directions:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+        <p className="pHome"><strong>Directions: </strong> 
+        Select 'guided' to practice with both a letter prompt and an illustration of the corresponding sign, or select 'unguided' to practice without an illustration. 
+        Try to match the prompt on the right. Hold up the hand sign in view of the webcam. The green letter over the webcam shows the letter corresponding with the sign you are currently holding up. 
+        When your sign is correct, the prompt will change. Use the total elapsed time and score to track your progress!
+        </p>
 
     );
 }
